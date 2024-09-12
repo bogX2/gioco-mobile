@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D),typeof(TouchingDirections))]
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,6 +12,10 @@ public class PlayerController : MonoBehaviour
 
     public float walkSpeed= 5f;
     public float runSpeed=8f;
+    public float jumpImpulse = 10f;
+
+    public float airWalkSpeed= 3f;
+    TouchingDirections touchingDirections;
 
     
     public bool _isFacingRight=true;
@@ -30,12 +34,22 @@ public class PlayerController : MonoBehaviour
 
     public float CurrentMoveSpeed{
         get{
-            if(IsMoving){
-                if(IsRunning){
+            
+            if(IsMoving && !touchingDirections.IsOnWall){
+
+                if(touchingDirections.IsGrounded){
+                    if(IsRunning){
                     return runSpeed;
                 }else{
                     return walkSpeed;
                 }
+                } else
+                {
+                    //Air Move
+                    return airWalkSpeed;
+                }
+
+                
             }else{
                 return 0;
             }
@@ -74,6 +88,7 @@ public class PlayerController : MonoBehaviour
     private void Awake(){
         rb=GetComponent<Rigidbody2D>();
         animator=GetComponent<Animator>();
+        touchingDirections = GetComponent<TouchingDirections>();
     }
 
     // Start is called before the first frame update
@@ -120,6 +135,16 @@ public class PlayerController : MonoBehaviour
             IsRunning=true;
         }else if(context.canceled){
             IsRunning=false;
+        }
+    }
+
+    public void onJump(InputAction.CallbackContext context){
+
+        //check if alive as well
+        if(context.started && touchingDirections.IsGrounded){
+
+            animator.SetTrigger(AnimationStrings.jump);
+            rb.velocity= new Vector2(rb.velocity.x, jumpImpulse);
         }
     }
 }
