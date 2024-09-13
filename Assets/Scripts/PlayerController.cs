@@ -5,7 +5,11 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-     
+    public bool CanMove{
+        get{
+            return animator.GetBool(AnimationStrings.canMove);
+        }
+    } 
     Rigidbody2D rb;
 
     Animator animator;
@@ -34,8 +38,8 @@ public class PlayerController : MonoBehaviour
 
     public float CurrentMoveSpeed{
         get{
-            
-            if(IsMoving && !touchingDirections.IsOnWall){
+            if(CanMove){
+                if(IsMoving && !touchingDirections.IsOnWall){
 
                 if(touchingDirections.IsGrounded){
                     if(IsRunning){
@@ -53,7 +57,13 @@ public class PlayerController : MonoBehaviour
             }else{
                 return 0;
             }
+        } else
+        {
+            //Movement lock
+            return 0;
         }
+            }
+            
     }
 
     Vector2 moveInput;
@@ -141,10 +151,17 @@ public class PlayerController : MonoBehaviour
     public void onJump(InputAction.CallbackContext context){
 
         //check if alive as well
-        if(context.started && touchingDirections.IsGrounded){
+        if(context.started && touchingDirections.IsGrounded && CanMove){
 
-            animator.SetTrigger(AnimationStrings.jump);
+            animator.SetTrigger(AnimationStrings.jumpTrigger);
             rb.velocity= new Vector2(rb.velocity.x, jumpImpulse);
+        }
+    }
+
+    public void OnAttack(InputAction.CallbackContext context){
+        if (context.started)
+        {
+            animator.SetTrigger(AnimationStrings.attackTrigger);
         }
     }
 }
