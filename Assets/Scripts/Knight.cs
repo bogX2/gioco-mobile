@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D),typeof(TouchingDirections))]
+[RequireComponent(typeof(Rigidbody2D),typeof(TouchingDirections), typeof(Damageable))]
 public class Knight : MonoBehaviour
 {
 
@@ -17,6 +17,8 @@ public class Knight : MonoBehaviour
     Rigidbody2D rb;
 
     TouchingDirections touchingDirections;
+
+    Damageable damageable;
 
     Animator animator;
 
@@ -73,6 +75,7 @@ public class Knight : MonoBehaviour
         rb=GetComponent<Rigidbody2D>();
         touchingDirections= GetComponent<TouchingDirections>();
         animator= GetComponent<Animator>();
+        damageable= GetComponent<Damageable>();
     }
 
 
@@ -87,12 +90,15 @@ public class Knight : MonoBehaviour
             FlipDirection();
         }
 
-        if(CanMove){
-            rb.velocity= new Vector2(walkSpeed * walkDirectionVector.x, rb.velocity.y);
-         } else{
-            rb.velocity= new Vector2(Mathf.Lerp(rb.velocity.x,0,walkStopRate), rb.velocity.y);
-         }
-            
+        if(!damageable.LockVelocity){
+                if(CanMove){
+                            rb.velocity= new Vector2(walkSpeed * walkDirectionVector.x, rb.velocity.y);
+                        } else{
+                            rb.velocity= new Vector2(Mathf.Lerp(rb.velocity.x,0,walkStopRate), rb.velocity.y);
+                        }
+        }
+
+         
     }
 
     private void FlipDirection()
@@ -104,6 +110,10 @@ public class Knight : MonoBehaviour
         } else{
             Debug.LogError("Current walkable direction is not set to legal values of right or left");
         }
+    }
+
+    public void OnHit(int damage, Vector2 knockback){
+        rb.velocity=new Vector2(knockback.x, rb.velocity.y + knockback.y);
     }
 
     // Start is called before the first frame update

@@ -481,6 +481,106 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &747010887 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7465628559968957738, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+  m_PrefabInstance: {fileID: 1658644944932553503}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52da7567ee14a9a4ba8e99a0ffbc40a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &1035271978
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2045385136}
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Knight, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7411356516649414759, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_Name
+      value: KnightEnemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465628559968957738, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: walkSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465628559968957738, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: walkStopRate
+      value: 0.05
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
 --- !u!1 &1097906857
 GameObject:
   m_ObjectHideFlags: 3
@@ -18349,6 +18449,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 519420031}
   followTarget: {fileID: 159156733}
+--- !u!114 &2045385136 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7465628559968957738, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+  m_PrefabInstance: {fileID: 1035271978}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52da7567ee14a9a4ba8e99a0ffbc40a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2048120830
 GameObject:
   m_ObjectHideFlags: 0
@@ -18456,6 +18567,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 747010887}
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Knight, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.2617474
@@ -18564,6 +18699,10 @@ PrefabInstance:
     - target: {fileID: 3493037464965009772, guid: 723b7893a5e127f4e9c7c72650517308, type: 3}
       propertyPath: m_Name
       value: player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414778610329778271, guid: 723b7893a5e127f4e9c7c72650517308, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9112530682936867232, guid: 723b7893a5e127f4e9c7c72650517308, type: 3}
       propertyPath: m_Actions
@@ -18745,3 +18884,4 @@ SceneRoots:
   - {fileID: 1153632290}
   - {fileID: 1310465767}
   - {fileID: 1658644944932553503}
+  - {fileID: 1035271978}

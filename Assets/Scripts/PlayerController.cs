@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-[RequireComponent(typeof(Rigidbody2D),typeof(TouchingDirections))]
+[RequireComponent(typeof(Rigidbody2D),typeof(TouchingDirections), typeof(Damageable))]
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
 
     public float airWalkSpeed= 3f;
     TouchingDirections touchingDirections;
+    Damageable damageable;
 
     
     public bool _isFacingRight=true;
@@ -101,10 +102,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+  
+
     private void Awake(){
         rb=GetComponent<Rigidbody2D>();
         animator=GetComponent<Animator>();
         touchingDirections = GetComponent<TouchingDirections>();
+        damageable = GetComponent<Damageable>();
     }
 
     // Start is called before the first frame update
@@ -120,7 +124,10 @@ public class PlayerController : MonoBehaviour
     }
 
     private void FixedUpdate(){
-        rb.velocity = new Vector2(moveInput.x * CurrentMoveSpeed, rb.velocity.y);
+
+        if(!damageable.LockVelocity)
+             rb.velocity = new Vector2(moveInput.x * CurrentMoveSpeed, rb.velocity.y);
+
         animator.SetFloat(AnimationStrings.yVelocity,rb.velocity.y);
     }
 
@@ -175,5 +182,10 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetTrigger(AnimationStrings.attackTrigger);
         }
+    }
+
+    public void OnHit(int damage, Vector2 knockback){
+
+        rb.velocity=new Vector2(knockback.x, rb.velocity.y + knockback.y);
     }
 }
