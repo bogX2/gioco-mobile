@@ -399,6 +399,17 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &560843274 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6587709251533381906, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+  m_PrefabInstance: {fileID: 1658644944932553503}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e733fa816a72543ba8faf097850112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -18591,6 +18602,10 @@ PrefabInstance:
       propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2328081510025482684, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.175
+      objectReference: {fileID: 0}
     - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.2617474
@@ -18643,6 +18658,10 @@ PrefabInstance:
       propertyPath: walkStopRate
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 7465628559968957738, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: cliffDetectionZone
+      value: 
+      objectReference: {fileID: 560843274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
