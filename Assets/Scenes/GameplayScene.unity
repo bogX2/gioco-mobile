@@ -695,95 +695,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbe7e174115193242b87ec17e61e1f87, type: 3}
---- !u!1001 &1035271978
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2045385136}
-    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnHit
-      objectReference: {fileID: 0}
-    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Knight, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 22.42
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7411356516649414759, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: m_Name
-      value: KnightEnemy (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7465628559968957738, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: walkSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7465628559968957738, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-      propertyPath: walkStopRate
-      value: 0.05
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
 --- !u!1 &1097906857
 GameObject:
   m_ObjectHideFlags: 3
@@ -18353,6 +18264,129 @@ Transform:
   - {fileID: 1097906858}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1156048434
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1156048435}
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Knight, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 489072469639899230, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2328081510025482684, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.175
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213970998117291055, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7411356516649414759, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: m_Name
+      value: KnightEnemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465628559968957738, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: walkSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465628559968957738, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: walkStopRate
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465628559968957738, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: walkAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465628559968957738, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: cliffDetectionZone
+      value: 
+      objectReference: {fileID: 1156048436}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+--- !u!114 &1156048435 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7465628559968957738, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+  m_PrefabInstance: {fileID: 1156048434}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52da7567ee14a9a4ba8e99a0ffbc40a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1156048436 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6587709251533381906, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+  m_PrefabInstance: {fileID: 1156048434}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e733fa816a72543ba8faf097850112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1310465765
 GameObject:
   m_ObjectHideFlags: 0
@@ -18814,17 +18848,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbe7e174115193242b87ec17e61e1f87, type: 3}
---- !u!114 &2045385136 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7465628559968957738, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
-  m_PrefabInstance: {fileID: 1035271978}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52da7567ee14a9a4ba8e99a0ffbc40a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2048120830
 GameObject:
   m_ObjectHideFlags: 0
@@ -19011,6 +19034,10 @@ PrefabInstance:
     - target: {fileID: 7465628559968957738, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
       propertyPath: walkStopRate
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465628559968957738, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
+      propertyPath: walkAcceleration
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7465628559968957738, guid: b23ea2cb174325b428d809ff67f9542f, type: 3}
       propertyPath: cliffDetectionZone
@@ -19380,7 +19407,7 @@ SceneRoots:
   - {fileID: 1153632290}
   - {fileID: 1310465767}
   - {fileID: 1658644944932553503}
-  - {fileID: 1035271978}
+  - {fileID: 1156048434}
   - {fileID: 1444669427}
   - {fileID: 60615314}
   - {fileID: 3939828608159807921}
