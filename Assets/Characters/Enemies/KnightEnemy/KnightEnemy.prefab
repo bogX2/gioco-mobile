@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.954, y: -1.719, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.2460425, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3213970998117291055}
@@ -467,7 +467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52da7567ee14a9a4ba8e99a0ffbc40a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 1
+  walkAcceleration: 3
+  maxSpeed: 3
   walkStopRate: 0.05
   attackZone: {fileID: 6853678567415775469}
   cliffDetectionZone: {fileID: 0}
@@ -538,6 +539,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageableHit:
+    m_PersistentCalls:
+      m_Calls: []
+  damageableDeath:
     m_PersistentCalls:
       m_Calls: []
   _maxHealth: 100
