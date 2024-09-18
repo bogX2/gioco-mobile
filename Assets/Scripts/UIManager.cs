@@ -57,7 +57,7 @@ public class UIManager : MonoBehaviour
             UnityEditor.EditorApplication.isPlaying=false;
 
             #elif (UNITY_STANDALONE)
-             Application.Quit;
+             Application.Quit();
 
             #elif(UNITY_WEBGL)
             SceneManager.LoadScene("QuitScene");
