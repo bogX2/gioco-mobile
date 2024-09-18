@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 526163813388796806}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.954, y: -1.719, z: 0}
+  m_LocalPosition: {x: 1.018, y: -1.678, z: 0}
   m_LocalScale: {x: 1, y: 1.2460425, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -502,7 +502,7 @@ MonoBehaviour:
   groundDistance: 0.05
   wallDistance: 0.2
   ceilingDistance: 0.05
-  _isGrounded: 0
+  _isGrounded: 1
   _isOnWall: 0
   _isOnCeiling: 0
 --- !u!95 &2970901248943090390
@@ -542,6 +542,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   damageableDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  healthChanged:
     m_PersistentCalls:
       m_Calls: []
   _maxHealth: 100

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,7 +14,11 @@ public Slider healthSlider;
     // Start is called before the first frame update
 
     private void Awake(){
-     GameObject player= GameObject.FindGameObjectWithTag("Player");
+        Thread.Sleep(2000);
+     GameObject player = GameObject.FindGameObjectWithTag("Player");
+     if(player==null){
+        Debug.Log("player not found in the scene");
+     }
      playerDamageable= player.GetComponent<Damageable>();
     }
 
@@ -21,7 +26,7 @@ public Slider healthSlider;
     void Start()
     {
 
-     
+
      healthSlider.value=CalculateSliderPercentage(playerDamageable.Health,playerDamageable.MaxHealth);
      healthBarText.text="HP" + playerDamageable.Health +"/"+ playerDamageable.MaxHealth;
 
@@ -29,13 +34,27 @@ public Slider healthSlider;
     }
 
     private void OnEnable(){
+
+        playerDamageable.healthChanged.AddListener(OnPlayerHealthChanged);
         
 
+    }
+
+
+    private void OnDisable(){
+        playerDamageable.healthChanged.RemoveListener(OnPlayerHealthChanged);
     }
 
     private float CalculateSliderPercentage(int currentHealth,int MaxHealth)
     {
         throw new NotImplementedException();
+    }
+
+
+    private void OnPlayerHealthChanged(int newHealth, int maxHealth){
+
+        healthSlider.value=CalculateSliderPercentage(newHealth,maxHealth);
+     healthBarText.text="HP" + newHealth +"/"+ maxHealth;
     }
 
     // Update is called once per frame
