@@ -24746,6 +24746,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b55455d78b048d2409ad70527fe5afd6, type: 3}
+--- !u!1 &1270593988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3493037464965009772, guid: 723b7893a5e127f4e9c7c72650517308, type: 3}
+  m_PrefabInstance: {fileID: 6915082461603734365}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1309722132
 GameObject:
   m_ObjectHideFlags: 0
@@ -26096,7 +26101,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6497504599696712126, guid: 723b7893a5e127f4e9c7c72650517308, type: 3}
   m_PrefabInstance: {fileID: 6915082461603734365}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1270593988}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6de89d11c0438f945ad4aedea536ee2a, type: 3}
@@ -27453,6 +27458,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 975927162732908459, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.7099609
+      objectReference: {fileID: 0}
     - target: {fileID: 1828442028893984697, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
       propertyPath: m_ControlPath
       value: <Keyboard>/space
@@ -27549,6 +27558,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3981638046052806310, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1270593988}
     - target: {fileID: 4185946887044031978, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
       propertyPath: m_Interactable
       value: 0
@@ -27633,11 +27646,17 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9189620851640077089, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 179.7002
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5486818591046270733, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
     - {fileID: 1917360383932307907, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
     - {fileID: 3591084068231476884, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+    - {fileID: 6547632446642024708, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+    - {fileID: 6757608913690904187, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
