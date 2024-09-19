@@ -27458,9 +27458,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 27609603886586547, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+      propertyPath: m_ControlPath
+      value: <Mouse>/radius
+      objectReference: {fileID: 0}
+    - target: {fileID: 27609603886586547, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+      propertyPath: m_UseIsolatedInputActions
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 27609603886586547, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+      propertyPath: m_PointerDownAction.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 27609603886586547, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+      propertyPath: m_PointerDownAction.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 3b753c1a-e668-48df-adee-364f5983bfa3
+      objectReference: {fileID: 0}
+    - target: {fileID: 27609603886586547, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+      propertyPath: m_PointerDownAction.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/f
+      objectReference: {fileID: 0}
+    - target: {fileID: 27609603886586547, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+      propertyPath: m_PointerDownAction.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Pointer Down
+      objectReference: {fileID: 0}
     - target: {fileID: 975927162732908459, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 1.7099609
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820239490396139372, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+      propertyPath: m_ControlPath
+      value: <Keyboard>/space
       objectReference: {fileID: 0}
     - target: {fileID: 1828442028893984697, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
       propertyPath: m_ControlPath
@@ -27638,6 +27666,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8203352326931651770, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1825095637}
+    - target: {fileID: 8203352326931651770, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnJumpButtonPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8203352326931651770, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8705075776439952931, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.241
@@ -27657,6 +27697,8 @@ PrefabInstance:
     - {fileID: 3591084068231476884, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
     - {fileID: 6547632446642024708, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
     - {fileID: 6757608913690904187, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+    - {fileID: 4263303264131336, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+    - {fileID: 5923749194181941001, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
