@@ -927,7 +927,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -19213,7 +19213,7 @@ MonoBehaviour:
   m_Follow: {fileID: 159156733}
   m_Lens:
     FieldOfView: 34
-    OrthographicSize: 5
+    OrthographicSize: 6
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -21207,7 +21207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3493037464965009772, guid: 723b7893a5e127f4e9c7c72650517308, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7414778610329778271, guid: 723b7893a5e127f4e9c7c72650517308, type: 3}
       propertyPath: m_Enabled
@@ -21442,6 +21442,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2993087244889015252, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3072548863411376439, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -21522,6 +21526,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3722621215488224943, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3722621215488224943, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4185946887044031978, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
       propertyPath: m_Interactable
       value: 0
@@ -21536,7 +21548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6288297674932238710, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7285112659898150176, guid: 96fb2f7ce14703743b166cc05ed37f87, type: 3}
       propertyPath: m_UiScaleMode

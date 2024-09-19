@@ -45,8 +45,9 @@ public Slider healthSlider;
         playerDamageable.healthChanged.RemoveListener(OnPlayerHealthChanged);
     }
 
-    private float CalculateSliderPercentage(int currentHealth,int MaxHealth)
+    private float CalculateSliderPercentage(float currentHealth,float MaxHealth)
     {
+        return  currentHealth/MaxHealth;
         throw new NotImplementedException();
     }
 
