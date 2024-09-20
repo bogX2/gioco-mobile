@@ -14,6 +14,8 @@ public class Damageable : MonoBehaviour
     public UnityEvent<int, int> healthChanged;
     private Animator animator;
 
+    private GameObject go;
+
     [SerializeField]
     private int _maxHealth = 100;
     public int MaxHealth {
@@ -41,7 +43,7 @@ public class Damageable : MonoBehaviour
                 isDead = true;
                 
                 // Controllo se pauseMenu è assegnato
-                if (pauseMenu != null) {
+                if (pauseMenu != null && go.tag=="Player") {
                     pauseMenu.gameOver();
                 } else {
                     Debug.LogError("PauseMenu non è assegnato!");
@@ -112,6 +114,7 @@ public class Damageable : MonoBehaviour
     private void Awake() {
         // Controllo se l'animator viene assegnato correttamente
         animator = GetComponent<Animator>();
+        go = gameObject;
         if (animator == null) {
             Debug.LogError("Animator non trovato sul GameObject " + gameObject.name);
         }
