@@ -5,6 +5,16 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+
+     void OnEnable()
+    {
+        // Resetta la posizione e la velocità del personaggio quando la scena viene ricaricata
+        transform.position = Vector3.zero; // Cambia con la posizione iniziale desiderata
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        
+        Debug.Log("Personaggio riattivato e resettato");
+    }
+    
     public bool CanMove{
         get{
             return animator.GetBool(AnimationStrings.canMove);

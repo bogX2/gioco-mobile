@@ -172,28 +172,6 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "1635d3fe-58b6-4ba9-a4e2-f4b964f6b5c8",
-                    "path": "<XRController>/{Primary2DAxis}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "XR",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3ea4d645-4504-4529-b061-ab81934c3752",
-                    "path": "<Joystick>/stick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Joystick",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "Touch",
                     "id": "a072a36a-f580-4ffc-972d-743885f67bc8",
                     "path": "2DVector",
@@ -207,7 +185,7 @@
                 {
                     "name": "up",
                     "id": "875b2f9b-a032-420f-bd24-a1860ee08acf",
-                    "path": "",
+                    "path": "<Touchscreen>/primaryTouch/radius/y",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -218,7 +196,7 @@
                 {
                     "name": "down",
                     "id": "d8c3954d-9899-41ff-a9c4-adbdf47f34ba",
-                    "path": "",
+                    "path": "<Touchscreen>/primaryTouch/radius/y",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -229,7 +207,7 @@
                 {
                     "name": "left",
                     "id": "c59453b2-7daa-474f-a73f-489e38d256a8",
-                    "path": "<Touchscreen>/pressure",
+                    "path": "<Touchscreen>/delta/left",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -240,7 +218,7 @@
                 {
                     "name": "right",
                     "id": "a5f8e9e4-8f5c-4539-aee6-ac9f9580bdb7",
-                    "path": "<Touchscreen>/primaryTouch/delta/right",
+                    "path": "<Touchscreen>/primaryTouch/radius/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

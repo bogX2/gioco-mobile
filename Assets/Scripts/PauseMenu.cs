@@ -12,6 +12,8 @@ public class PauseMenu : MonoBehaviour
     private float value;
     public  static bool Paused=false;
     public GameObject PausedMenuCanvas;
+
+    public GameObject gameOverUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,5 +57,15 @@ public class PauseMenu : MonoBehaviour
         mixer.SetFloat("MyExposedParam",volumeSlider.value);
 
     }
+
+    public void gameOver(){
+        gameOverUI.SetActive(true);
+    }
+
+    public void restart(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+   
 
 }

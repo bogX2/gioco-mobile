@@ -28,7 +28,7 @@ public Slider healthSlider;
 
 
      healthSlider.value=CalculateSliderPercentage(playerDamageable.Health,playerDamageable.MaxHealth);
-     healthBarText.text="HP" + playerDamageable.Health +"/"+ playerDamageable.MaxHealth;
+     healthBarText.text="HP"+" " + playerDamageable.Health +" "+"/"+" "+  playerDamageable.MaxHealth;
 
 
     }
@@ -55,7 +55,7 @@ public Slider healthSlider;
     private void OnPlayerHealthChanged(int newHealth, int maxHealth){
 
         healthSlider.value=CalculateSliderPercentage(newHealth,maxHealth);
-     healthBarText.text="HP" + newHealth +"/"+ maxHealth;
+     healthBarText.text="HP"+" " + newHealth +" "+"/"+" "+ maxHealth;
     }
 
     // Update is called once per frame
