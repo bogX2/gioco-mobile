@@ -17,6 +17,8 @@ public class PauseMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.visible=false;
+        Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale=1f;
          mixer.GetFloat("MyExposedParam",out value);
         volumeSlider.value=value;
@@ -33,6 +35,19 @@ public class PauseMenu : MonoBehaviour
             else{
                 Stop();
             }
+        }
+
+
+        if(gameOverUI.activeInHierarchy){
+            Cursor.visible=true;
+            Cursor.lockState = CursorLockMode.None;
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            player.SetActive(false);
+        }
+        if(PausedMenuCanvas.activeInHierarchy){
+            Cursor.visible=true;
+            Cursor.lockState = CursorLockMode.None;
+            
         }
     }
 
